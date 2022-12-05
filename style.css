@@ -159,3 +159,14 @@ body {
 .hidden {
   display: none;
 }
+
+@media (max-width: 26em) {
+  body {
+    padding: 2rem;
+  }
+}
+@media (max-height: 26em) {
+  body {
+    padding: 2rem;
+  }
+} ;
