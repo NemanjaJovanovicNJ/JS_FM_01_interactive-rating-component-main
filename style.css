@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Default component*/
+.container {
+  padding: 3rem;
+  margin: 0 auto;
+  max-height: 41rem;
+  max-width: 41rem;
+  background-color: hsl(214, 20%, 16%);
+  background: linear-gradient(
+    to bottom,
+    hsl(214, 20%, 16%),
+    hsla(225, 6%, 13%, 0.342)
+  );
+  border-radius: 3rem;
+}
+
+.circle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+
+.circle-rating:hover {
+  background: hsl(25, 97%, 53%) !important;
+  color: #fff !important;
+}
+
+.circle-star {
+  margin-bottom: 3rem;
+}
+
+.star-icon {
+  width: 2rem;
+}
+
+.feedback-question {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.772);
+  margin-bottom: 1.5rem;
+}
+
+.feedback-text {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 2.5rem;
+}
+
+.ratings-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.rating {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: hsl(217, 12%, 63%);
+}
+
+.submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+/*POP up*/
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(214, 20%, 16%);
+  background: linear-gradient(
+    to bottom,
+    hsl(214, 20%, 16%),
+    hsla(225, 6%, 13%, 0.342)
+  );
+}
+
+.thank-you-img {
+  width: 40%;
+}
+
+.rating-message {
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: hsl(25, 97%, 53%);
+  display: block;
+  padding: 0.7rem 2rem 0.4rem 2rem;
+
+  background-color: hsl(213, 19%, 18%);
+
+  border-radius: 4rem;
+}
+
+.thank-you-heading {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.thank-you-text {
+  font-size: 1.55rem;
+  font-weight: 400;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
