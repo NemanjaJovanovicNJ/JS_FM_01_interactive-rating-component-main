@@ -19,7 +19,8 @@ const resetRates = function () {
 };
 // SUBMIT Button
 
-submitBtnEl.addEventListener("click", function () {
+submitBtnEl.addEventListener("click", function (e) {
+  e.preventDefault();
   document.querySelector(".container-rate").classList.add("hidden");
   document.querySelector(".thank-you").classList.remove("hidden");
   ratingMessage.textContent = `You selected ${currentRating} out of 5`;

@@ -128,6 +128,9 @@ body {
     hsl(214, 20%, 16%),
     hsla(225, 6%, 13%, 0.342)
   );
+
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .thank-you-img {
@@ -159,7 +162,8 @@ body {
   text-align: center;
 }
 .hidden {
-  display: none;
+  opacity: 0;
+  z-index: -1000;
 }
 
 @media (max-width: 26em) {
